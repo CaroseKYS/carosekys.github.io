@@ -2,23 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用 - 木子随笔</title>
+<title>固定思维模式与成长型思维模式 - 木子随笔</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="由于题主的特殊应用场景，需要使用linux的图形界面进行远程链接，并在linux上运行chrome浏览器，现将操作过程记录如下，以备后查，但愿能够帮助到路过的吃瓜群众。">
+    <meta name="description" content="固定思维模式：琢磨自己是一个什么样的人，也就是寻求认同感，进入人设，给人打标签。成长型思维模式：考虑自己下一步应该做什么，朝什么方向努力。 固定思维模式的问题：挫折不耐受，一但遭受打击，就会怀疑自己的人设，从而逡巡不前。比如夸一个孩子是个聪明的人，那么如果他在竞争中输了，就会怀疑自己是不是不是个聪明的人，就会丧失信心。 成长型思维模式的优势：一旦遭受挫折，不容易丧失信心，需要计划下一步怎么做才能达">
+<meta name="keywords" content="人文，思考">
 <meta property="og:type" content="article">
-<meta property="og:title" content="阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用">
-<meta property="og:url" content="https://carosekys.github.io/2019/07/09/linux-desktop/index.html">
+<meta property="og:title" content="固定思维模式与成长型思维模式">
+<meta property="og:url" content="https://carosekys.github.io/2019/07/18/fixed-mindsets-and-growth-mindsets/index.html">
 <meta property="og:site_name" content="木子随笔">
-<meta property="og:description" content="由于题主的特殊应用场景，需要使用linux的图形界面进行远程链接，并在linux上运行chrome浏览器，现将操作过程记录如下，以备后查，但愿能够帮助到路过的吃瓜群众。">
+<meta property="og:description" content="固定思维模式：琢磨自己是一个什么样的人，也就是寻求认同感，进入人设，给人打标签。成长型思维模式：考虑自己下一步应该做什么，朝什么方向努力。 固定思维模式的问题：挫折不耐受，一但遭受打击，就会怀疑自己的人设，从而逡巡不前。比如夸一个孩子是个聪明的人，那么如果他在竞争中输了，就会怀疑自己是不是不是个聪明的人，就会丧失信心。 成长型思维模式的优势：一旦遭受挫折，不容易丧失信心，需要计划下一步怎么做才能达">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://carosekys.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-09T12:02:31.954Z">
+<meta property="og:updated_time" content="2019-07-18T01:47:14.939Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用">
-<meta name="twitter:description" content="由于题主的特殊应用场景，需要使用linux的图形界面进行远程链接，并在linux上运行chrome浏览器，现将操作过程记录如下，以备后查，但愿能够帮助到路过的吃瓜群众。">
+<meta name="twitter:title" content="固定思维模式与成长型思维模式">
+<meta name="twitter:description" content="固定思维模式：琢磨自己是一个什么样的人，也就是寻求认同感，进入人设，给人打标签。成长型思维模式：考虑自己下一步应该做什么，朝什么方向努力。 固定思维模式的问题：挫折不耐受，一但遭受打击，就会怀疑自己的人设，从而逡巡不前。比如夸一个孩子是个聪明的人，那么如果他在竞争中输了，就会怀疑自己是不是不是个聪明的人，就会丧失信心。 成长型思维模式的优势：一旦遭受挫折，不容易丧失信心，需要计划下一步怎么做才能达">
 <meta name="twitter:image" content="https://carosekys.github.io/images/og_image.png">
 
 
@@ -93,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用" height="28">
+                <img src="/images/logo.svg" alt="固定思维模式与成长型思维模式" height="28">
             
             </a>
         </div>
@@ -144,13 +145,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-09T12:02:31.953Z">2019-07-09</time>
+                <time class="level-item has-text-grey" datetime="2019-07-18T01:12:06.000Z">2019-07-18</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 131 个字)
+                    3 分钟 读完 (大约 497 个字)
                 </span>
                 
                 
@@ -159,23 +160,26 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用
+                固定思维模式与成长型思维模式
             
         </h1>
         <div class="content">
-            <p>由于题主的特殊应用场景，需要使用linux的图形界面进行远程链接，并在linux上运行chrome浏览器，现将操作过程记录如下，以备后查，但愿能够帮助到路过的吃瓜群众。</p>
-<a id="more"></a>
+            <p>固定思维模式：琢磨自己是一个什么样的人，也就是寻求认同感，进入人设，给人打标签。<br>成长型思维模式：考虑自己下一步应该做什么，朝什么方向努力。</p>
+<p>固定思维模式的问题：挫折不耐受，一但遭受打击，就会怀疑自己的人设，从而逡巡不前。比如夸一个孩子是个聪明的人，那么如果他在竞争中输了，就会怀疑自己是不是不是个聪明的人，就会丧失信心。</p>
+<p>成长型思维模式的优势：一旦遭受挫折，不容易丧失信心，需要计划下一步怎么做才能达到预期。所以，大人夸奖小孩子的时候应该夸奖他们是个特别努力的人，而不是聪明的人。不过这种模式似乎对成年人无效。</p>
+<p>认同感的优势：如果一个人认同自己是群体的一员，就会主动拥有群体的优秀精神。比如认同自己是个诚实的人，考试就不回作弊；认同自己是个优秀市民，就不会乱扔垃圾；认同自己是佛教徒，就自然向善。。。<br>认同感的问题：如果只偏执的认同本群体，就会出现非常极端的行为。比如政治上的党同伐异；比如宗教派别之间的相互残杀；比如种族灭绝等。</p>
+<p>“人设”是个枷锁，尽量避免给自己和别人，尤其是孩子强加人设角色。要教育孩子你要做什么样的事，而不是你是什么样的人。</p>
+<p>—- 读<code>得到</code>万维钢《精英日课第三季》《要做事，不要做“人”》有感</p>
 
-<h2 id="1-购买ECS"><a href="#1-购买ECS" class="headerlink" title="1. 购买ECS"></a>1. 购买ECS</h2><ul>
-<li>实例规格：ecs.c5.large（2核 4GB，计算型 c5）</li>
-<li>操作系统：CentOS 7.4 64位</li>
-<li>操作用户：root</li>
-</ul>
-<h2 id="2-安装图形化界面"><a href="#2-安装图形化界面" class="headerlink" title="2. 安装图形化界面"></a>2. 安装图形化界面</h2><ul>
-<li>安装 MATE Desktop： <code>yum groups install &quot;MATE Desktop&quot;</code></li>
-<li>安装 GNOME Desktop：<code>yum groupinstall &quot;GNOME Desktop&quot;</code></li>
-</ul>
-
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/人文，思考/">人文，思考</a>
+                </div>
+            </div>
         </div>
         
         
@@ -219,17 +223,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/07/18/fixed-mindsets-and-growth-mindsets/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">固定思维模式与成长型思维模式</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/03/web-printer/">
-                <span class="level-item">WEB 打印方案探讨</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/09/linux-desktop/">
+                <span class="level-item">阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -249,7 +246,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="阿里云ECS CentOS 7 图形桌面安装、远程连接及chrome浏览器的安装与使用" height="28">
+                    <img src="/images/logo.svg" alt="固定思维模式与成长型思维模式" height="28">
                 
                 </a>
                 <p class="is-size-7">
